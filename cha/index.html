@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Chá de Casa Nova - Tainá & DiasLeme">
+
+    <title>Tainá & DiasLeme | Nosso Novo Lar</title>
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="config.js"></script>
+
+</head>
+
+<body>
+
+    <!-- ==================================================
+         TELA DE ABERTURA
+    =================================================== -->
+
+    <section id="intro" class="intro">
+
+        <div class="intro-leaf leaf-1">❧</div>
+        <div class="intro-leaf leaf-2">❧</div>
+
+        <div class="intro-content">
+
+            <span class="intro-heart">♡</span>
+
+            <p class="intro-small">
+                UM NOVO CAPÍTULO
+            </p>
+
+            <h1>
+                Tainá
+                <span>&</span> DiasLeme
+            </h1>
+
+            <p class="intro-subtitle">
+                estão construindo um novo lar
+            </p>
+
+            <button id="enterButton" class="main-button">
+                Entrar no nosso lar
+                <span>→</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         CONTEÚDO PRINCIPAL
+    =================================================== -->
+
+    <main id="mainContent" class="hidden">
+
+
+        <!-- ==================================================
+             HERO
+        =================================================== -->
+
+        <section class="hero">
+
+            <div class="hero-overlay"></div>
+
+            <div class="floating-leaf hero-leaf-1">❧</div>
+            <div class="floating-leaf hero-leaf-2">❧</div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    UM NOVO CAPÍTULO COMEÇA
+                </p>
+
+                <h1>
+                    Tainá
+                    <span>&</span> DiasLeme
+                </h1>
+
+                <p class="hero-subtitle">
+                    Chá de Casa Nova
+                </p>
+
+                <div class="scroll-indicator">
+                    <span>↓</span>
+                    <small>role para descobrir</small>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             INTRODUÇÃO
+        =================================================== -->
+
+        <section class="section introduction">
+
+            <div class="section-decoration">♡</div>
+
+            <p class="eyebrow">
+                NOSSO NOVO LAR
+            </p>
+
+            <h2>
+                De dois caminhos,<br> uma só história.
+            </h2>
+
+            <p class="large-text">
+                Depois de tantos momentos compartilhados, sonhos construídos e histórias vividas, chegou a hora de abrir as portas de um novo capítulo.
+            </p>
+
+            <p class="large-text">
+                E queremos celebrar esse começo ao lado de pessoas especiais.
+            </p>
+
+        </section>
+
+
+        <!-- ==================================================
+             CARROSSEL
+        =================================================== -->
+
+        <section class="section photos-section">
+
+            <p class="eyebrow">
+                TAINÁ & DIASLEME
+            </p>
+
+            <h2>
+                Algumas histórias<br> merecem ser lembradas.
+            </h2>
+
+            <div class="carousel">
+
+                <button id="prevButton" class="carousel-button prev" aria-label="Foto anterior">
+                    ‹
+                </button>
+
+                <div class="carousel-window">
+
+                    <div id="carouselTrack" class="carousel-track">
+
+                        <div class="carousel-slide">
+                            <img src="assets/fotos/casal-1.jpg" alt="Tainá e DiasLeme">
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="assets/fotos/casal-2.jpg" alt="Tainá e DiasLeme">
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="assets/fotos/casal-3.jpg" alt="Tainá e DiasLeme">
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="assets/fotos/casal-4.jpg" alt="Tainá e DiasLeme">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button id="nextButton" class="carousel-button next" aria-label="Próxima foto">
+                    ›
+                </button>
+
+            </div>
+
+            <div id="carouselDots" class="carousel-dots"></div>
+
+        </section>
+
+
+        <!-- ==================================================
+             HISTÓRIA
+        =================================================== -->
+
+        <section class="story-section">
+
+            <div class="story-container">
+
+                <p class="eyebrow">
+                    NOSSA CAMINHADA
+                </p>
+
+                <h2>
+                    Um amor que<br> virou lar.
+                </h2>
+
+                <div class="story-line">
+
+                    <article class="story-item">
+
+                        <div class="story-marker">
+                            01
+                        </div>
+
+                        <div class="story-content">
+
+                            <span>
+                                O começo
+                            </span>
+
+                            <h3>
+                                Onde tudo começou
+                            </h3>
+
+                            <p>
+                                Toda história bonita começa com um primeiro capítulo. A nossa começou com encontros, sorrisos e momentos que, aos poucos, foram ganhando um significado especial.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="story-item">
+
+                        <div class="story-marker">
+                            02
+                        </div>
+
+                        <div class="story-content">
+
+                            <span>
+                                A caminhada
+                            </span>
+
+                            <h3>
+                                Escolhendo caminhar juntos
+                            </h3>
+
+                            <p>
+                                Vieram os sonhos, os planos, as conquistas, os desafios e tantas memórias que fizeram essa história crescer.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="story-item">
+
+                        <div class="story-marker">
+                            03
+                        </div>
+
+                        <div class="story-content">
+
+                            <span>
+                                O novo capítulo
+                            </span>
+
+                            <h3>
+                                Nosso novo lar
+                            </h3>
+
+                            <p>
+                                Agora começa uma nova fase. Um espaço para transformar paredes em memórias, cômodos em histórias e uma casa em lar.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="love-verse">
+
+                    <span>♡</span>
+
+                    <p>
+                        "Que nunca nos falte amor para construir, coragem para sonhar e motivos para agradecer."
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             CONTADOR
+        =================================================== -->
+
+        <section class="countdown-section">
+
+            <p class="eyebrow">
+                ESTÁ CHEGANDO
+            </p>
+
+            <h2>
+                Nosso grande dia
+            </h2>
+
+            <div id="countdown" class="countdown">
+
+                <div>
+                    <strong id="days">00</strong>
+                    <span>dias</span>
+                </div>
+
+                <div>
+                    <strong id="hours">00</strong>
+                    <span>horas</span>
+                </div>
+
+                <div>
+                    <strong id="minutes">00</strong>
+                    <span>minutos</span>
+                </div>
+
+                <div>
+                    <strong id="seconds">00</strong>
+                    <span>segundos</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             CONVITE
+        =================================================== -->
+
+        <section class="invitation">
+
+            <div class="invitation-content">
+
+                <div class="house-icon">
+                    🏡
+                </div>
+
+                <p class="eyebrow">
+                    VOCÊ FAZ PARTE DA NOSSA HISTÓRIA
+                </p>
+
+                <h2>
+                    Queremos celebrar<br> com você!
+                </h2>
+
+                <p class="invitation-text">
+                    Estamos começando uma nova fase e seria muito especial ter você conosco para celebrar esse novo começo.
+                </p>
+
+                <div class="event-info">
+
+                    <div class="event-item">
+
+                        <span class="event-icon">
+                            ♡
+                        </span>
+
+                        <small>
+                            DATA
+                        </small>
+
+                        <strong>
+                            20 DE SETEMBRO
+                        </strong>
+
+                    </div>
+
+
+                    <div class="event-item">
+
+                        <span class="event-icon">
+                            ◷
+                        </span>
+
+                        <small>
+                            HORÁRIO
+                        </small>
+
+                        <strong>
+                            16:00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="event-item">
+
+                        <span class="event-icon">
+                            ⌖
+                        </span>
+
+                        <small>
+                            LOCAL
+                        </small>
+
+                        <strong>
+                            NOSSO NOVO LAR
+                        </strong>
+
+                    </div>
+
+                </div>
+
+                <button class="outline-button" id="locationButton">
+                    Como chegar
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             LISTA
+        =================================================== -->
+
+        <section class="section gifts-section">
+
+            <p class="eyebrow">
+                UM CARINHO PARA NOSSO LAR
+            </p>
+
+            <h2>
+                Nossa lista de presentes
+            </h2>
+
+            <p class="section-description">
+                Escolha um item para fazer parte dessa nova história.
+            </p>
+
+
+            <!-- FILTROS -->
+
+            <div id="categoryFilters" class="category-filters"></div>
+
+
+            <!-- LISTA -->
+
+            <div id="giftsGrid" class="gifts-grid"></div>
+
+        </section>
+
+
+        <!-- ==================================================
+             MENSAGEM FINAL
+        =================================================== -->
+
+        <section class="final-section">
+
+            <div class="final-content">
+
+                <span class="final-heart">
+                    ♡
+                </span>
+
+                <p class="eyebrow">
+                    COM CARINHO
+                </p>
+
+                <h2>
+                    Obrigado por fazer parte desse capítulo.
+                </h2>
+
+                <p>
+                    Com amor,
+                </p>
+
+                <strong>
+                    Tainá & DiasLeme
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             FOOTER
+        =================================================== -->
+
+        <footer>
+
+            <p>
+                Tainá & DiasLeme
+            </p>
+
+            <span>
+                Nosso novo lar · 2026
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <!-- ==================================================
+         MODAL DE PRESENTE
+    =================================================== -->
+
+    <div id="giftModal" class="modal hidden">
+
+        <div class="modal-content">
+
+            <button id="closeModal" class="close-modal" aria-label="Fechar">
+                ×
+            </button>
+
+            <span class="modal-icon">
+                🎁
+            </span>
+
+            <p class="eyebrow">
+                UM PRESENTE PARA NOSSO LAR
+            </p>
+
+            <h2 id="selectedGift">
+                Presente
+            </h2>
+
+            <p>
+                Que carinho! 💚 Digite seu nome para reservar este item.
+            </p>
+
+            <label for="guestName">
+                Seu nome
+            </label>
+
+            <input type="text" id="guestName" placeholder="Digite seu nome" maxlength="60" autocomplete="name">
+
+            <button id="confirmGift" class="confirm-button">
+                Confirmar meu presente ♡
+            </button>
+
+            <small class="privacy-note">
+                Seu nome ficará oculto na lista.
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==================================================
+         TOAST
+    =================================================== -->
+
+    <div id="toast" class="toast">
+        Presente reservado com carinho! 💚
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

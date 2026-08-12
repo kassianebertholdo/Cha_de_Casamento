@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Tainá & DiasLeme | Painel
+    </title>
+
+    <link rel="stylesheet" href="admin.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="../config.js"></script>
+
+</head>
+
+<body>
+
+
+    <!-- LOGIN -->
+
+    <section id="loginScreen" class="login-screen">
+
+        <div class="login-box">
+
+            <span>
+                ♡
+            </span>
+
+            <p>
+                ÁREA PRIVADA
+            </p>
+
+            <h1>
+                Tainá & DiasLeme
+            </h1>
+
+            <input id="email" type="email" placeholder="E-mail">
+
+            <input id="password" type="password" placeholder="Senha">
+
+            <button id="loginButton">
+                Entrar
+            </button>
+
+            <small id="loginError"></small>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAINEL -->
+
+    <main id="dashboard" class="hidden">
+
+        <header>
+
+            <div>
+
+                <span>
+                    PAINEL DOS NOIVOS
+                </span>
+
+                <h1>
+                    Tainá & DiasLeme
+                </h1>
+
+            </div>
+
+            <button id="logoutButton">
+                Sair
+            </button>
+
+        </header>
+
+
+        <section id="stats" class="stats"></section>
+
+
+        <section>
+
+            <div class="dashboard-title">
+
+                <h2>
+                    Lista de presentes
+                </h2>
+
+                <button id="refreshButton">
+                    Atualizar
+                </button>
+
+            </div>
+
+
+            <div id="reservations" class="reservations"></div>
+
+        </section>
+
+    </main>
+
+
+    <script src="admin.js"></script>
+
+</body>
+
+</html>
